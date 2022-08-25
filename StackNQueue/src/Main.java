@@ -1,6 +1,8 @@
 import CustomQueue.CustomQueue;
 import CustomStack.*;
 
+import java.util.*;
+
 public class Main {
     public static void main(String[] args) {
 /* Stack test*/
@@ -22,8 +24,19 @@ public class Main {
         customStack.popData();
         System.out.println(customStack.isEmpty());
 */
-/*Queue Test*/
-
+/*
+        Stack<Integer> stack = new Stack<>();
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
+        System.out.println(stack.peek());
+        System.out.println(stack.pop());
+        System.out.println(stack.peek());
+        System.out.println(stack.pop());
+        System.out.println(stack.peek());
+*/
+        /*Queue Test*/
+/*
         CustomQueue customQueue = new CustomQueue();
         CustomQueue.myQueue myQueue = customQueue.new myQueue();
 
@@ -39,6 +52,15 @@ public class Main {
         myQueue.delete();
         qNode =  myQueue.peek();
         System.out.println( myQueue.printNode(qNode) );
+*/
+        Queue<Integer> queue = new LinkedList<>();
+        queue.add(1);
+        queue.offer(2);
+        queue.peek();
+        queue.isEmpty();
+        queue.size();
+        queue.remove();
+        queue.poll();
 
     }
 }
